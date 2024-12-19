@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .board-size-selection {
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    font-size: 1.2rem;
+    width: 60px;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #218838;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: repeat(auto-fill, 50px);
+    gap: 2px;
+    margin-top: 20px;
+  }
+  
+  .chessboard div {
+    width: 50px;
+    height: 50px;
+    background-color: #f0d9b5;
+  }
+  
+  .chessboard div:nth-child(even) {
+    background-color: #b58863;
+  }
+  
+  .queen {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg');
+    background-size: cover;
+    background-position: center;
+  }
+  
